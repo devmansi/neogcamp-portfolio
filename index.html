@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansi Goyal</title>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <nav class="navigation container">
+
+    <div id="nav-name">
+      <a class="link" href="/">devmansi</a>
+    </div>
+
+    <ul class="nav-items">
+      <li class="list-item-inline">
+        <a class="link" id="link-active" href="/">Home</a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link " href="/projects.html">Projects</a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link " href="./blog.html">Blogs</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <header class="intro ">
+    <div class="intro-text">
+      <h1 class="intro-heading">
+        Hi!
+        <div>I'm <span class="heading-inverted"> Mansi </span></div>
+      </h1>
+      <p class="typewriter">
+      </p>
+    </div>
+
+    <img alt="" class="img" src="/images/cover-image-intro.gif" />
+
+  </header>
+  <section class="section container container-center about">
+    <h1>About</h1>
+    <p>I am a Frontend Developer primarily working in React. I have strong background in core web technologies which has
+      helped me understand JavaScript Frameworks (such as React etc) and CSS Frameworks with relative ease. I have good
+      understanding of both theoretical and practical aspects of React, which I put to use in order to create
+      high-quality user interfaces.</p>
+  </section>
+
+  <section class="section container container-center">
+    <h1>Projects</h1>
+    <p>
+      I have made some projects during neogCamp level0 which you can see by clicking below.
+    </p>
+    <div class="buttons">
+      <a class="link link-primary" href="./projects.html">See Projects
+      </a>
+    </div>
+
+  </section>
+
+  <section class="section container container-center">
+    <h1>Blogs</h1>
+    <p>
+      I have written blogs about things that interested me.
+    </p>
+    <div class="buttons">
+      <a class="link link-primary" href="./blog.html">Read Blogs</a>
+    </div>
+  </section>
+  <br>
+
+  <footer class="footer">
+    <ul class="social-links ">
+      <li class="list-item-inline">
+        <a class="link" href="https://github.com/devmansi">
+          <img alt="github" class="footer-icons" src="/images/github.svg" />
+        </a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link" href="https://twitter.com/MansiGo18740503">
+          <img alt="twitter" class="footer-icons" src="/images/twitter.svg" />
+        </a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link" href="https://www.linkedin.com/in/mansi-goyal-625114249/">
+          <img alt="linkedin" class="footer-icons" src="/images/linkedin.svg" />
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script>
+    const app = document.querySelector('.typewriter');
+    const typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 70,
+    });
+
+    typewriter
+      .typeString("Im a Programmer")
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString("Im a Front-End Developer")
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString("Im a Web Designer")
+      .pauseFor(1000)
+      .deleteAll()
+      .start();
+  </script>
+</body>
+
+</html>
